@@ -1,0 +1,40 @@
+<!--The content below is only a placeholder and can be replaced.-->
+<div style="text-align:center">
+  <h4>
+    Welcome to {{ title }}!
+  </h4>  
+</div>
+
+<mat-card>
+    <mat-form-field>
+      <input matInput [(ngModel)]="task">
+   
+      </mat-form-field>      
+      <button mat-fab color="warn" (click)="add()">Enviar</button>
+</mat-card>
+<ul>
+  <li></li>
+</ul>
+<table class="table">
+  <thead>
+    <tr *ngFor="let cliente of clientes">
+      <th>{{cliente}}</th>
+      
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td scope="row"></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td scope="row"></td>
+      <td></td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+
+
+
